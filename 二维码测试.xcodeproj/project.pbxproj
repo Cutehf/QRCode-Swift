@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2810E0841CCF660700C74750 /* CreateQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2810E0831CCF660700C74750 /* CreateQRCodeViewController.swift */; };
 		282FEF761CCDF82600069735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282FEF751CCDF82600069735 /* AppDelegate.swift */; };
 		282FEF781CCDF82600069735 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282FEF771CCDF82600069735 /* ViewController.swift */; };
 		282FEF7B1CCDF82600069735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282FEF791CCDF82600069735 /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		282FEF801CCDF82600069735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282FEF7E1CCDF82600069735 /* LaunchScreen.storyboard */; };
 		282FEF8B1CCDF82600069735 /* _____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282FEF8A1CCDF82600069735 /* _____Tests.swift */; };
 		282FEF961CCDF82600069735 /* _____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282FEF951CCDF82600069735 /* _____UITests.swift */; };
+		287C408A1CCF194F00693AA0 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287C40891CCF194F00693AA0 /* ScanView.swift */; };
+		287C408C1CCF4AE400693AA0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287C408B1CCF4AE400693AA0 /* CustomButton.swift */; };
+		287C408D1CCF4C7F00693AA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282FEF771CCDF82600069735 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2810E0831CCF660700C74750 /* CreateQRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQRCodeViewController.swift; sourceTree = "<group>"; };
 		282FEF721CCDF82500069735 /* 二维码测试.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "二维码测试.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		282FEF751CCDF82600069735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		282FEF771CCDF82600069735 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,8 @@
 		282FEF911CCDF82600069735 /* 二维码测试UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "二维码测试UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		282FEF951CCDF82600069735 /* _____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_____UITests.swift"; sourceTree = "<group>"; };
 		282FEF971CCDF82600069735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		287C40891CCF194F00693AA0 /* ScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		287C408B1CCF4AE400693AA0 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +106,9 @@
 			children = (
 				282FEF751CCDF82600069735 /* AppDelegate.swift */,
 				282FEF771CCDF82600069735 /* ViewController.swift */,
+				287C40891CCF194F00693AA0 /* ScanView.swift */,
+				287C408B1CCF4AE400693AA0 /* CustomButton.swift */,
+				2810E0831CCF660700C74750 /* CreateQRCodeViewController.swift */,
 				282FEF791CCDF82600069735 /* Main.storyboard */,
 				282FEF7C1CCDF82600069735 /* Assets.xcassets */,
 				282FEF7E1CCDF82600069735 /* LaunchScreen.storyboard */,
@@ -193,7 +203,12 @@
 				TargetAttributes = {
 					282FEF711CCDF82500069735 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 6PE83W639P;
+						DevelopmentTeam = 5JPCKT42RQ;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					282FEF851CCDF82600069735 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -259,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287C408C1CCF4AE400693AA0 /* CustomButton.swift in Sources */,
 				282FEF781CCDF82600069735 /* ViewController.swift in Sources */,
 				282FEF761CCDF82600069735 /* AppDelegate.swift in Sources */,
+				2810E0841CCF660700C74750 /* CreateQRCodeViewController.swift in Sources */,
+				287C408A1CCF194F00693AA0 /* ScanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287C408D1CCF4C7F00693AA0 /* ViewController.swift in Sources */,
 				282FEF961CCDF82600069735 /* _____UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,7 +421,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "二维码测试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "huangfei.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,7 +434,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "二维码测试/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "huangfei.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,6 +510,7 @@
 				282FEF9C1CCDF82600069735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		282FEF9D1CCDF82600069735 /* Build configuration list for PBXNativeTarget "二维码测试Tests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +519,7 @@
 				282FEF9F1CCDF82600069735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		282FEFA01CCDF82600069735 /* Build configuration list for PBXNativeTarget "二维码测试UITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +528,7 @@
 				282FEFA21CCDF82600069735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
